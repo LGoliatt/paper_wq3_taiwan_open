@@ -1,0 +1,100 @@
+\begin{table}[h!]
+\centering
+\caption{Performance comparison of machine learning models with normality test results for residuals.}
+\label{tab:model_comparison_normality}
+\begin{tabular}{lllllllllr}
+\hline
+{}                  &             R² &           RMSE &            MAE &           MAPE (\%) &   AD Statistic &     KS p-value &  AD Normal (\%) &   KS Normal (\%) &    N \\
+Model               &                &                &                &                     &                &                &                 &                 &      \\
+\hline
+KNeighborsDist      &  0.663 ± 0.054 &  1.009 ± 0.076 &  0.688 ± 0.055 &  2559.286 ± 246.395 &  2.801 ± 0.863 &  0.024 ± 0.033 &    0/100 (0.0\%) &  20/100 (20.0\%) &  100 \\
+LightGBMXT          &  0.750 ± 0.037 &  0.870 ± 0.064 &  0.637 ± 0.047 &  2480.626 ± 237.618 &  1.315 ± 0.739 &  0.286 ± 0.219 &  24/100 (24.0\%) &  86/100 (86.0\%) &  100 \\
+XGBoost             &  0.733 ± 0.040 &  0.899 ± 0.073 &  0.639 ± 0.052 &  2477.386 ± 278.132 &  2.386 ± 0.854 &  0.081 ± 0.091 &    0/100 (0.0\%) &  49/100 (49.0\%) &  100 \\
+ExtraTreesMSE       &  0.723 ± 0.031 &  0.918 ± 0.055 &  0.678 ± 0.044 &  2758.812 ± 267.433 &  1.805 ± 0.720 &  0.109 ± 0.105 &    2/100 (2.0\%) &  62/100 (62.0\%) &  100 \\
+KNeighborsUnif      &  0.664 ± 0.055 &  1.008 ± 0.078 &  0.718 ± 0.055 &  2732.347 ± 255.992 &  1.882 ± 0.740 &  0.093 ± 0.120 &    4/100 (4.0\%) &  54/100 (54.0\%) &  100 \\
+NeuralNetFastAI     &  0.484 ± 0.048 &  1.253 ± 0.078 &  0.965 ± 0.060 &  4434.792 ± 448.396 &  2.628 ± 1.221 &  0.076 ± 0.105 &    0/100 (0.0\%) &  43/100 (43.0\%) &  100 \\
+NeuralNetTorch      &  0.733 ± 0.046 &  0.899 ± 0.079 &  0.620 ± 0.053 &  2200.493 ± 222.655 &  2.545 ± 1.016 &  0.061 ± 0.072 &    0/100 (0.0\%) &  36/100 (36.0\%) &  100 \\
+LightGBM            &  0.734 ± 0.045 &  0.897 ± 0.076 &  0.644 ± 0.050 &  2476.867 ± 253.309 &  1.833 ± 0.819 &  0.174 ± 0.164 &    5/100 (5.0\%) &  75/100 (75.0\%) &  100 \\
+CatBoost            &  0.759 ± 0.036 &  0.854 ± 0.068 &  0.616 ± 0.048 &  2337.117 ± 203.414 &  1.637 ± 0.879 &  0.179 ± 0.150 &  15/100 (15.0\%) &  79/100 (79.0\%) &  100 \\
+LightGBMLarge       &  0.700 ± 0.046 &  0.954 ± 0.077 &  0.676 ± 0.057 &  2661.349 ± 328.712 &  2.653 ± 1.050 &  0.069 ± 0.078 &    0/100 (0.0\%) &  43/100 (43.0\%) &  100 \\
+WeightedEnsemble_L2 &  0.762 ± 0.037 &  0.849 ± 0.069 &  0.600 ± 0.048 &  2224.172 ± 222.101 &  2.087 ± 0.976 &  0.111 ± 0.115 &    2/100 (2.0\%) &  61/100 (61.0\%) &  100 \\
+RandomForestMSE     &  0.743 ± 0.043 &  0.881 ± 0.074 &  0.613 ± 0.050 &  2299.174 ± 223.499 &  2.348 ± 0.853 &  0.095 ± 0.118 &    1/100 (1.0\%) &  52/100 (52.0\%) &  100 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\caption{Performance comparison of machine learning models with normality test results for residuals.}
+\label{tab:model_comparison_normality}
+\begin{tabular}{lllllr}
+\hline
+{}                  &   AD Statistic &     KS p-value &   AD Normal (\%) &   KS Normal (\%) &    N \\
+Model               &                &                &                  &                  &      \\
+\hline
+KNeighborsDist      &  2.801 ± 0.863 &  0.024 ± 0.033 &    0/100 (0.0\%) &  20/100 (20.0\%) &  100 \\
+LightGBMXT          &  1.315 ± 0.739 &  0.286 ± 0.219 &  24/100 (24.0\%) &  86/100 (86.0\%) &  100 \\
+XGBoost             &  2.386 ± 0.854 &  0.081 ± 0.091 &    0/100 (0.0\%) &  49/100 (49.0\%) &  100 \\
+ExtraTreesMSE       &  1.805 ± 0.720 &  0.109 ± 0.105 &    2/100 (2.0\%) &  62/100 (62.0\%) &  100 \\
+KNeighborsUnif      &  1.882 ± 0.740 &  0.093 ± 0.120 &    4/100 (4.0\%) &  54/100 (54.0\%) &  100 \\
+NeuralNetFastAI     &  2.628 ± 1.221 &  0.076 ± 0.105 &    0/100 (0.0\%) &  43/100 (43.0\%) &  100 \\
+NeuralNetTorch      &  2.545 ± 1.016 &  0.061 ± 0.072 &    0/100 (0.0\%) &  36/100 (36.0\%) &  100 \\
+LightGBM            &  1.833 ± 0.819 &  0.174 ± 0.164 &    5/100 (5.0\%) &  75/100 (75.0\%) &  100 \\
+CatBoost            &  1.637 ± 0.879 &  0.179 ± 0.150 &  15/100 (15.0\%) &  79/100 (79.0\%) &  100 \\
+LightGBMLarge       &  2.653 ± 1.050 &  0.069 ± 0.078 &    0/100 (0.0\%) &  43/100 (43.0\%) &  100 \\
+WeightedEnsemble_L2 &  2.087 ± 0.976 &  0.111 ± 0.115 &    2/100 (2.0\%) &  61/100 (61.0\%) &  100 \\
+RandomForestMSE     &  2.348 ± 0.853 &  0.095 ± 0.118 &    1/100 (1.0\%) &  52/100 (52.0\%) &  100 \\
+\hline
+\end{tabular}
+\end{table}
+    
+
+    
+% ## Normality Test Columns
+% AD Statistic (Anderson-Darling Test Statistic)
+% What it measures: How well residuals follow a normal distribution
+
+% Interpretation:
+
+% Lower values = closer to normal distribution
+
+% Critical value at 5% significance is typically around 0.75
+
+% Values above critical value = reject normality
+
+% In your results: LightGBMXT has best (lowest) AD statistic (1.315)
+
+% KS p-value (Kolmogorov-Smirnov Test p-value)
+% What it measures: Probability that residuals come from normal distribution
+
+% Interpretation:
+
+% p-value > 0.05 = residuals are normal (fail to reject normality)
+
+% p-value ≤ 0.05 = residuals are not normal (reject normality)
+
+% In your results: LightGBMXT has highest p-value (0.286)
+
+
+
+
+% ## Normality Summary Columns
+% AD Normal (%)
+% What it shows: Percentage of runs where residuals passed Anderson-Darling normality test
+
+% Interpretation: Higher percentages indicate more consistent normal residuals
+
+% In your results: LightGBMXT has highest (24%), most models have very low percentages
+
+% KS Normal (%)
+% What it shows: Percentage of runs where residuals passed Kolmogorov-Smirnov normality test
+
+% Interpretation: Higher percentages indicate more consistent normal residuals
+
+% In your results: LightGBMXT (86%) and CatBoost (79%) perform best
+
+% N (Sample Size)
+% What it shows: Number of experimental runs per model
+
+% Interpretation: All models have 100 runs, ensuring statistical reliability
