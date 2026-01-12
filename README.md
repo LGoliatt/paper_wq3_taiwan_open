@@ -4,7 +4,7 @@
 
 1. read_data.py
 
-2. AUutoML.py
+2. AutoML.py
 
 3. metrics_summary.py
 
